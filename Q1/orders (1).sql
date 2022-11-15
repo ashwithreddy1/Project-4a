@@ -1,0 +1,12 @@
+CREATE TABLE `orders` (
+  `order_id` int(11) NOT NULL,
+  `order_no` int(11) NOT NULL,
+  `customer_id` int(11) NOT NULL,
+  `order_amount` float NOT NULL,
+  `total_discount` float NOT NULL,
+  `gst` float NOT NULL,
+  `payable_amount` float NOT NULL,
+  `order_date` datetime NOT NULL,
+  `payment_status` varchar(255) NOT NULL,
+  `status` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
